@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Agenda de contatos</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./image/contacts.png" alt="Agenda telefônica">
+            <h1>Agenda de contatos</h1>
+        </header>
+
+        <form id="form-ctt">
+        <input type="text" id="int-nome" placeholder="Insira seu nome" required>
+        <input type="tel" id="int-telefone" placeholder="(00)00000-0000" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" required>
+            <button type="submit">Adicionar +</button>
+        </form>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total de contatos:</td>
+                    <td id="total">---</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
